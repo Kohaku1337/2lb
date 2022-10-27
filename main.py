@@ -10,11 +10,11 @@ def countTrainingCost(M, H, S, T):
     energy = int(0.035 * M + (speed ** 2 / H) * 0.029 * M)
 
     if distance <= 2000:
-        motivate_text = ' Зачем ты вышел из дома тренироваться? '
+        motivate_text = ' Ты прошел неплохую дистанцию! '
     elif distance <= 4000:
-        motivate_text = ' Твой дом все дальше от тебя... '
+        motivate_text = ' Твои достижения в прохождении шагов стали еще выше... '
     elif distance > 4000:
-        motivate_text = ' Умоляю вернись домой, тебе спорт не нужен! '
+        motivate_text = ' Твой результат достиг максимума, поздравляю! Фраз на большие дистанции больше не будет( : '
 
     return distance, energy, motivate_text
 
